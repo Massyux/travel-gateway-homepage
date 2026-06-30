@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand navy — sampled from the Silvi Tour logo (#28465d) */
+  --color-navy-950: #0a141c;
+  --color-navy-900: #102230;
+  --color-navy-800: #15303f;
+  --color-navy-700: #1c3f50;
+  --color-navy-600: #28465d;
+  --color-navy-500: #3c5d75;
+  --color-navy-400: #6f8fa3;
+  --color-navy-300: #9bb2c2;
+  --color-navy-100: #e6edf1;
+
+  /* Brand teal — exact CTA color from silvitour.com (#138496) */
+  --color-teal-700: #0c5f6c;
+  --color-teal-600: #138496;
+  --color-teal-500: #1b9aae;
+  --color-teal-400: #4fb3c2;
+  --color-teal-300: #8ccfd8;
+  --color-teal-100: #e1f4f6;
+
+  --color-sand-50: #f7fafb;
+  --color-sand-100: #eef3f5;
+  --color-sand-200: #dee8eb;
+
+  --background: var(--color-sand-50);
+  --foreground: var(--color-navy-950);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-600: var(--color-navy-600);
+  --color-navy-500: var(--color-navy-500);
+  --color-navy-400: var(--color-navy-400);
+  --color-navy-300: var(--color-navy-300);
+  --color-navy-100: var(--color-navy-100);
+
+  --color-teal-700: var(--color-teal-700);
+  --color-teal-600: var(--color-teal-600);
+  --color-teal-500: var(--color-teal-500);
+  --color-teal-400: var(--color-teal-400);
+  --color-teal-300: var(--color-teal-300);
+  --color-teal-100: var(--color-teal-100);
+
+  --color-sand-50: var(--color-sand-50);
+  --color-sand-100: var(--color-sand-100);
+  --color-sand-200: var(--color-sand-200);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-arabic: var(--font-arabic);
+  --font-brand: var(--font-brand);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+::selection {
+  background: var(--color-teal-300);
+  color: var(--color-navy-950);
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
 }

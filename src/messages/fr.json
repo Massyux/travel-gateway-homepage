@@ -1,0 +1,137 @@
+{
+  "Nav": {
+    "voyageOrganise": "Voyage organisé",
+    "promos": "Séjours",
+    "destinations": "Destinations",
+    "offers": "Vols",
+    "visas": "Visas",
+    "pro": "Espace Pro",
+    "bookNow": "Réserver"
+  },
+  "Hero": {
+    "eyebrow": "Vols · Séjours · Voyages organisés · Visas",
+    "title": "Le voyage qui vous ressemble",
+    "subtitle": "Chez Silvi Tour, chaque itinéraire est pensé pour vous — par notre équipe, ou par l'une de nos agences partenaires.",
+    "ctaB2c": "Je réserve mon voyage",
+    "ctaB2b": "Je suis une agence",
+    "scroll": "Découvrir"
+  },
+  "Help": {
+    "tooltip": "Besoin d'aide ?",
+    "title": "Une question ?",
+    "subtitle": "Notre équipe est disponible pour vous accompagner.",
+    "whatsapp": "WhatsApp",
+    "phone": "Appelez-nous",
+    "email": "Envoyez un e-mail"
+  },
+  "Gateway": {
+    "eyebrow": "Accès direct",
+    "title": "Vous êtes...",
+    "subtitle": "Choisissez votre profil pour accéder à votre espace de réservation dédié.",
+    "b2c": {
+      "tag": "Particuliers",
+      "title": "Je voyage",
+      "desc": "Hôtels, vols, séjours et bons plans pour organiser votre prochain voyage en quelques clics.",
+      "cta": "Accéder à l'espace voyageurs"
+    },
+    "b2b": {
+      "tag": "Professionnels",
+      "title": "Je suis une agence",
+      "desc": "Tarifs nets, disponibilités en temps réel et outils dédiés aux professionnels du tourisme.",
+      "cta": "Accéder à l'espace pro"
+    }
+  },
+  "Trust": {
+    "items": [
+      { "value": "15 000+", "label": "Hôtels partenaires" },
+      { "value": "120+", "label": "Destinations" },
+      { "value": "850K", "label": "Voyageurs satisfaits" },
+      { "value": "24/7", "label": "Support dédié" }
+    ]
+  },
+  "Promos": {
+    "eyebrow": "Bons plans",
+    "title": "Promotions hôtels du moment",
+    "subtitle": "Des séjours sélectionnés avec des réductions exclusives, pour un temps limité.",
+    "perNight": "/ nuit",
+    "viewAll": "Voir toutes les promos"
+  },
+  "Offers": {
+    "eyebrow": "Billetterie",
+    "title": "Offres de vols à saisir",
+    "subtitle": "Comparez et réservez vos billets d'avion vers les plus belles destinations.",
+    "from": "à partir de"
+  },
+  "Destinations": {
+    "eyebrow": "Inspiration",
+    "title": "Destinations en vedette",
+    "subtitle": "Laissez-vous inspirer par nos coups de cœur du moment."
+  },
+  "B2B": {
+    "eyebrow": "Espace professionnel",
+    "title": "Vous êtes une agence de voyage ?",
+    "desc": "Rejoignez notre réseau de partenaires et accédez à des tarifs nets, à un inventaire temps réel et à des outils de réservation pensés pour les professionnels.",
+    "points": [
+      "Tarifs nets négociés sur l'hôtellerie et la billetterie",
+      "Disponibilités en temps réel, sans intermédiaire",
+      "Back-office dédié et support prioritaire"
+    ],
+    "cta": "Découvrir l'espace pro"
+  },
+  "Testimonials": {
+    "eyebrow": "Ils nous font confiance",
+    "title": "Ce que disent nos voyageurs",
+    "items": [
+      {
+        "quote": "Réservation ultra simple et des prix imbattables sur l'hôtel à Santorin. On y retourne sans hésiter.",
+        "name": "Camille R.",
+        "role": "Voyageuse"
+      },
+      {
+        "quote": "En tant qu'agence, l'espace pro nous fait gagner un temps précieux sur chaque dossier client.",
+        "name": "Yacine B.",
+        "role": "Agence Horizon Voyages"
+      },
+      {
+        "quote": "De très bons plans vols réguliers, et un support réactif en cas de besoin.",
+        "name": "Sophie L.",
+        "role": "Voyageuse"
+      }
+    ]
+  },
+  "Newsletter": {
+    "title": "Ne manquez aucun bon plan",
+    "subtitle": "Inscrivez-vous et recevez nos meilleures offres hôtels et vols en avant-première.",
+    "placeholder": "Votre adresse e-mail",
+    "cta": "S'inscrire"
+  },
+  "BrandMenu": {
+    "home": "Accueil",
+    "admin": "Espace administrateur"
+  },
+  "About": {
+    "eyebrow": "Notre groupe",
+    "title": "Plus de 16 ans à vos côtés",
+    "subtitle": "Silvi Tour, c'est un réseau de 8 agences réparties sur 3 continents, au service des voyageurs et des professionnels du tourisme depuis plus de 16 ans."
+  },
+  "TicketLookup": {
+    "button": "Voir mon billet",
+    "placeholder": "N° de billet ou PNR",
+    "submit": "Suivre",
+    "success": "Merci ! Votre demande a été reçue — le suivi complet de billet arrive bientôt.",
+    "empty": "Merci de saisir un numéro de billet ou de PNR."
+  },
+  "Footer": {
+    "tagline": "Votre agence de voyage et tour-opérateur, pour les particuliers comme pour les professionnels.",
+    "company": "Entreprise",
+    "about": "À propos",
+    "contact": "Contact",
+    "careers": "Carrières",
+    "resources": "Ressources",
+    "help": "Aide & FAQ",
+    "terms": "Conditions générales",
+    "privacy": "Confidentialité",
+    "follow": "Suivez-nous",
+    "rights": "Tous droits réservés."
+  }
+}

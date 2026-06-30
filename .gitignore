@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code local settings (may contain machine-specific permissions)
+.claude/settings.local.json
+
+/src/generated/prisma
+
+# SQLite database (homepage phase 2 admin space)
+*.db
+*.db-journal
+
+# admin-uploaded images (homepage phase 2 admin space)
+/public/uploads/*
+!/public/uploads/.gitkeep

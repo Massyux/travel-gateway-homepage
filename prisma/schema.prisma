@@ -1,0 +1,75 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  // "postgresql" for production (Railway Postgres addon).
+  // Local dev: keep DATABASE_URL="file:./dev.db" in .env — the runtime
+  // adapter auto-detects SQLite vs PostgreSQL from the URL prefix.
+  provider = "postgresql"
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+
+  promos  Promo[]
+  offers  FlightOffer[]
+  themes  ThemeSetting[]
+}
+
+model Promo {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  image           String
+  discountPercent Int
+  priceEur        Float
+  rating          Float
+  nameFr          String
+  nameEn          String
+  nameAr          String
+  locationFr      String
+  locationEn      String
+  locationAr      String
+  position        Int      @default(0)
+  updatedAt       DateTime @updatedAt
+  updatedById     String?
+  updatedBy       AdminUser? @relation(fields: [updatedById], references: [id])
+}
+
+model FlightOffer {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  image       String
+  priceEur    Float
+  tagFr       String
+  tagEn       String
+  tagAr       String
+  fromFr      String
+  fromEn      String
+  fromAr      String
+  toFr        String
+  toEn        String
+  toAr        String
+  position    Int      @default(0)
+  updatedAt   DateTime @updatedAt
+  updatedById String?
+  updatedBy   AdminUser? @relation(fields: [updatedById], references: [id])
+}
+
+model ThemeSetting {
+  id          String   @id @default("default")
+  navy600     String
+  teal500     String
+  updatedAt   DateTime @updatedAt
+  updatedById String?
+  updatedBy   AdminUser? @relation(fields: [updatedById], references: [id])
+}

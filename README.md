@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Silvi Tour — Homepage
 
-## Getting Started
+Marketing homepage and B2B/B2C gateway for Silvi Tour, built with Next.js
+(App Router), TypeScript, Tailwind CSS, and `next-intl` (fr/en/ar).
 
-First, run the development server:
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Fill in `.env.local`:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `NEXT_PUBLIC_B2C_URL` / `NEXT_PUBLIC_B2B_URL` — the existing booking platforms.
+- `DATABASE_URL`, `ADMIN_SESSION_SECRET`, `ADMIN_SEED_USERNAME`, `ADMIN_SEED_PASSWORD` —
+  required for the admin space (see below).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then set up the database and start the dev server:
 
-## Learn More
+```bash
+npx prisma migrate dev
+npx prisma db seed
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Admin space
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Clicking the logo in the header reveals an "Espace administrateur" link
+(`/admin`). It requires the `ADMIN_SEED_USERNAME` / `ADMIN_SEED_PASSWORD`
+credentials from your `.env.local` (created by `prisma db seed`). From there,
+an admin can create/edit/delete homepage promos and flight offers, and change
+the two brand theme colors — changes are persisted to SQLite (`prisma/dev.db`)
+and appear on the public homepage on next load, no redeploy needed.
 
-## Deploy on Vercel
+See [specs/001-homepage-phase-2/](specs/001-homepage-phase-2/) for the full
+spec, technical plan, and data model behind this feature.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app/[locale]/` — the public, translated (fr/en/ar) marketing site.
+- `src/app/admin/` — the internal, French-only admin space (outside the
+  `[locale]` segment on purpose — see `specs/001-homepage-phase-2/plan.md`).
+- `src/app/api/admin/` — admin Route Handlers (auth, promos/offers/theme CRUD).
+- `src/components/` — shared UI.
+- `src/content/` — remaining static content (destinations, hero images,
+  agencies). Promos and flight offers moved to the database in Phase 2.
+- `src/lib/` — Prisma client, auth helpers, currency conversion, i18n field
+  helpers.
+- `prisma/` — schema, migrations, and the seed script.
+
+## Scripts
+
+```bash
+npm run dev      # start the dev server (Turbopack)
+npm run build    # production build
+npm run start    # run the production build
+npm run lint     # ESLint
+npx tsc --noEmit # type-check
+```
+
+## Learn more
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [next-intl Documentation](https://next-intl.dev)
+- [Prisma Documentation](https://www.prisma.io/docs)

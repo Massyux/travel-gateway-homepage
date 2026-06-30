@@ -1,0 +1,137 @@
+{
+  "Nav": {
+    "voyageOrganise": "Package Tours",
+    "promos": "Stays",
+    "destinations": "Destinations",
+    "offers": "Flights",
+    "visas": "Visas",
+    "pro": "Pro Area",
+    "bookNow": "Book Now"
+  },
+  "Hero": {
+    "eyebrow": "Flights · Stays · Package Tours · Visas",
+    "title": "The trip that feels like you",
+    "subtitle": "At Silvi Tour, every itinerary is built around you — by our team, or by one of our partner agencies.",
+    "ctaB2c": "Book my trip",
+    "ctaB2b": "I'm a travel agency",
+    "scroll": "Explore"
+  },
+  "Help": {
+    "tooltip": "Need help?",
+    "title": "Got a question?",
+    "subtitle": "Our team is here to help you out.",
+    "whatsapp": "WhatsApp",
+    "phone": "Call us",
+    "email": "Send an email"
+  },
+  "Gateway": {
+    "eyebrow": "Direct access",
+    "title": "You are...",
+    "subtitle": "Choose your profile to access your dedicated booking space.",
+    "b2c": {
+      "tag": "Individuals",
+      "title": "I'm traveling",
+      "desc": "Hotels, flights, getaways and deals to plan your next trip in just a few clicks.",
+      "cta": "Go to traveler area"
+    },
+    "b2b": {
+      "tag": "Professionals",
+      "title": "I'm an agency",
+      "desc": "Net rates, real-time availability and booking tools built for travel professionals.",
+      "cta": "Go to pro area"
+    }
+  },
+  "Trust": {
+    "items": [
+      { "value": "15,000+", "label": "Partner hotels" },
+      { "value": "120+", "label": "Destinations" },
+      { "value": "850K", "label": "Happy travelers" },
+      { "value": "24/7", "label": "Dedicated support" }
+    ]
+  },
+  "Promos": {
+    "eyebrow": "Deals",
+    "title": "Current hotel promotions",
+    "subtitle": "Hand-picked stays with exclusive discounts, for a limited time.",
+    "perNight": "/ night",
+    "viewAll": "View all deals"
+  },
+  "Offers": {
+    "eyebrow": "Flights",
+    "title": "Flight offers to grab",
+    "subtitle": "Compare and book your flights to the world's most beautiful destinations.",
+    "from": "from"
+  },
+  "Destinations": {
+    "eyebrow": "Inspiration",
+    "title": "Featured destinations",
+    "subtitle": "Get inspired by our current favorites."
+  },
+  "B2B": {
+    "eyebrow": "Professional area",
+    "title": "Are you a travel agency?",
+    "desc": "Join our partner network and access net rates, real-time inventory and booking tools designed for professionals.",
+    "points": [
+      "Negotiated net rates on hotels and flights",
+      "Real-time availability, no middleman",
+      "Dedicated back office and priority support"
+    ],
+    "cta": "Discover the pro area"
+  },
+  "Testimonials": {
+    "eyebrow": "Trusted by travelers",
+    "title": "What our travelers say",
+    "items": [
+      {
+        "quote": "Booking was effortless and the hotel rate in Santorini was unbeatable. We'll be back.",
+        "name": "Camille R.",
+        "role": "Traveler"
+      },
+      {
+        "quote": "As an agency, the pro area saves us precious time on every single booking.",
+        "name": "Yacine B.",
+        "role": "Horizon Voyages Agency"
+      },
+      {
+        "quote": "Great recurring flight deals, and responsive support whenever we need it.",
+        "name": "Sophie L.",
+        "role": "Traveler"
+      }
+    ]
+  },
+  "Newsletter": {
+    "title": "Never miss a deal",
+    "subtitle": "Sign up to get our best hotel and flight offers first.",
+    "placeholder": "Your email address",
+    "cta": "Subscribe"
+  },
+  "BrandMenu": {
+    "home": "Home",
+    "admin": "Admin space"
+  },
+  "About": {
+    "eyebrow": "Our group",
+    "title": "16+ years by your side",
+    "subtitle": "Silvi Tour is a network of 8 agencies across 3 continents, serving travelers and travel professionals for more than 16 years."
+  },
+  "TicketLookup": {
+    "button": "Track my flight",
+    "placeholder": "Ticket number or PNR",
+    "submit": "Track",
+    "success": "Thanks! Your request has been received — full ticket tracking is coming soon.",
+    "empty": "Please enter a ticket number or PNR."
+  },
+  "Footer": {
+    "tagline": "Your travel agency and tour operator, for individuals and professionals alike.",
+    "company": "Company",
+    "about": "About",
+    "contact": "Contact",
+    "careers": "Careers",
+    "resources": "Resources",
+    "help": "Help & FAQ",
+    "terms": "Terms of service",
+    "privacy": "Privacy",
+    "follow": "Follow us",
+    "rights": "All rights reserved."
+  }
+}
