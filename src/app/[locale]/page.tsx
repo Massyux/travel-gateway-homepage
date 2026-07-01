@@ -9,6 +9,7 @@ import B2BBanner from "@/components/B2BBanner";
 import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
 import AboutFilialesSection from "@/components/AboutFilialesSection";
+import TravelNewsSection from "@/components/TravelNewsSection";
 
 export default async function Home({
   params,
@@ -25,6 +26,7 @@ export default async function Home({
       <TrustBar />
       <PromoCarousel />
       <OffersGrid />
+      <TravelNewsSection />
       <DestinationsGrid />
       <B2BBanner />
       <Testimonials />

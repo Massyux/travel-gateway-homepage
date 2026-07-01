@@ -105,6 +105,12 @@
     "placeholder": "Your email address",
     "cta": "Subscribe"
   },
+  "News": {
+    "eyebrow": "Travel news",
+    "title": "What's happening now",
+    "subtitle": "New routes, visa changes, GDS updates, trending destinations — everything that moves in the world of travel.",
+    "refreshNote": "Updated every hour"
+  },
   "BrandMenu": {
     "home": "Home",
     "admin": "Admin space"

@@ -105,6 +105,12 @@
     "placeholder": "Votre adresse e-mail",
     "cta": "S'inscrire"
   },
+  "News": {
+    "eyebrow": "Actualités voyages",
+    "title": "Les news du moment",
+    "subtitle": "Nouvelles routes, conditions visas, mises à jour GDS, destinations prisées — tout ce qui change dans le monde du voyage.",
+    "refreshNote": "Mise à jour toutes les heures"
+  },
   "BrandMenu": {
     "home": "Accueil",
     "admin": "Espace administrateur"
