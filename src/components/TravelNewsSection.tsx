@@ -10,21 +10,20 @@ export default async function TravelNewsSection() {
   const items = await fetchTravelNews();
 
   return (
-    <section id="news" className="bg-navy-950 px-6 py-20 sm:py-28">
+    <section id="news" className="relative overflow-hidden px-6 py-20 sm:py-28" style={{ background: "linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 40%, #ccfbf1 100%)" }}>
       <div className="mx-auto max-w-7xl">
-        {/* Heading — white on dark */}
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <span className="inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90">
+            <span className="inline-block rounded-full bg-teal-100 px-4 py-1.5 text-sm font-semibold text-teal-600">
               {t("eyebrow")}
             </span>
-            <h2 className="mt-4 font-display text-3xl font-semibold text-white sm:text-4xl">
+            <h2 className="mt-4 font-display text-3xl font-semibold text-navy-950 sm:text-4xl">
               {t("title")}
             </h2>
-            <p className="mt-2 max-w-xl text-white/60">{t("subtitle")}</p>
+            <p className="mt-2 max-w-xl text-navy-800/70">{t("subtitle")}</p>
           </div>
-          <span className="text-sm text-white/40">
-            {t("refreshNote")}
+          <span className="text-sm text-navy-800/40">
+            🔄 {t("refreshNote")}
           </span>
         </div>
 

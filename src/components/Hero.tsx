@@ -27,7 +27,18 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="mt-6 max-w-2xl font-display text-4xl font-semibold leading-tight sm:text-6xl"
+          className="mt-6 font-display text-5xl font-black leading-tight sm:text-7xl lg:text-8xl"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2400&q=90')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            color: "transparent",
+            filter: "drop-shadow(0 2px 12px rgba(0,0,0,0.3))",
+          }}
         >
           {t("title")}
         </motion.h1>

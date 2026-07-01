@@ -29,6 +29,7 @@ export default function Header() {
     { href: `/${locale}#destinations`, label: t("destinations") },
     { href: b2cUrl, label: t("offers") },
     { href: `/${locale}/visas`, label: t("visas") },
+    { href: `/${locale}#news`, label: t("news") },
   ];
 
   const dark = !scrolled;

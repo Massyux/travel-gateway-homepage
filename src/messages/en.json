@@ -5,12 +5,13 @@
     "destinations": "Destinations",
     "offers": "Flights",
     "visas": "Visas",
+    "news": "News",
     "pro": "Pro Area",
     "bookNow": "Book Now"
   },
   "Hero": {
     "eyebrow": "Flights · Stays · Package Tours · Visas",
-    "title": "The trip that feels like you",
+    "title": "Discover the world",
     "subtitle": "At Silvi Tour, every itinerary is built around you — by our team, or by one of our partner agencies.",
     "ctaB2c": "Book my trip",
     "ctaB2b": "I'm a travel agency",
