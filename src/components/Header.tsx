@@ -24,11 +24,11 @@ export default function Header() {
   const b2cUrl = getPlatformUrl("b2c", locale);
 
   const links = [
-    { href: b2cUrl, label: t("voyageOrganise") },
-    { href: "#promos", label: t("promos") },
-    { href: "#destinations", label: t("destinations") },
-    { href: "#offers", label: t("offers") },
-    { href: b2cUrl, label: t("visas") },
+    { href: `/${locale}/voyages-organises`, label: t("voyageOrganise") },
+    { href: `/${locale}/sejours`, label: t("promos") },
+    { href: `/${locale}#destinations`, label: t("destinations") },
+    { href: b2cUrl, label: t("offers") },
+    { href: `/${locale}/visas`, label: t("visas") },
   ];
 
   const dark = !scrolled;
