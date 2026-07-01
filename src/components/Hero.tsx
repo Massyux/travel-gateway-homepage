@@ -27,7 +27,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="mt-6 font-display text-5xl font-black leading-tight sm:text-7xl lg:text-8xl"
+          className="mt-6 font-display text-6xl font-black leading-tight sm:text-8xl lg:text-9xl"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2400&q=90')",
