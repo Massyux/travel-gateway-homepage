@@ -116,6 +116,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "Algérie360",
     sourceUrl: "https://www.algerie360.com",
     pubDate: "30 juin 2026",
+    // avion en vol décollant vers l'Asie
+    image: "https://images.unsplash.com/photo-1529074963764-98f45c47344b?auto=format&fit=crop&w=800&q=80",
     category: "vols",
   },
   {
@@ -126,6 +128,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "ObservAlgérie",
     sourceUrl: "https://observalgerie.com",
     pubDate: "30 juin 2026",
+    // avion en piste / tarmac vue Africa
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
     category: "vols",
   },
   {
@@ -136,6 +140,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "Amadeus",
     sourceUrl: "https://amadeus.com",
     pubDate: "11 mai 2026",
+    // écran de réservation / interface GDS Amadeus
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
     category: "gds",
   },
   {
@@ -146,6 +152,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "Travelport",
     sourceUrl: "https://www.travelport.com",
     pubDate: "11 juin 2026",
+    // interface tech / tableau de bord numérique
+    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
     category: "gds",
   },
   {
@@ -156,6 +164,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "Aviation Week",
     sourceUrl: "https://aviationweek.com",
     pubDate: "1 juil. 2026",
+    // Boeing 787 Dreamliner en vol
+    image: "https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=800&q=80",
     category: "vols",
   },
   {
@@ -166,6 +176,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "France-Visas",
     sourceUrl: "https://france-visas.gouv.fr",
     pubDate: "1 janv. 2026",
+    // passeport + tampons visa Schengen
+    image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80",
     category: "visa",
   },
   {
@@ -176,6 +188,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "US Embassy Algiers",
     sourceUrl: "https://dz.usembassy.gov",
     pubDate: "21 janv. 2026",
+    // drapeau américain / ambassade / documents visa USA
+    image: "https://images.unsplash.com/photo-1585152968992-d2b9444408cc?auto=format&fit=crop&w=800&q=80",
     category: "visa",
   },
   {
@@ -186,6 +200,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "Aviation Week",
     sourceUrl: "https://aviationweek.com",
     pubDate: "30 juin 2026",
+    // pyramides de Gizeh / Le Caire Egypte
+    image: "https://images.unsplash.com/photo-1568797629192-789acf8e4df3?auto=format&fit=crop&w=800&q=80",
     category: "vols",
   },
   {
@@ -196,6 +212,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "TTG Asia",
     sourceUrl: "https://www.ttgasia.com",
     pubDate: "5 juin 2026",
+    // intelligence artificielle / data visualisation / écrans tech
+    image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=800&q=80",
     category: "gds",
   },
   {
@@ -206,6 +224,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "Simple Flying",
     sourceUrl: "https://simpleflying.com",
     pubDate: "15 juin 2026",
+    // Singapore Airlines — avion en vol ou aéroport Changi
+    image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80",
     category: "vols",
   },
   {
@@ -216,6 +236,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "Qatar Airways",
     sourceUrl: "https://www.qatarairways.com",
     pubDate: "7 juin 2026",
+    // Doha skyline / Qatar Airways
+    image: "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=800&q=80",
     category: "visa",
   },
   {
@@ -226,6 +248,8 @@ const STATIC_NEWS: NewsItem[] = [
     source: "Simple Flying",
     sourceUrl: "https://simpleflying.com",
     pubDate: "29 juin 2026",
+    // avion low-cost orange sur piste (EasyJet couleur orange)
+    image: "https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?auto=format&fit=crop&w=800&q=80",
     category: "vols",
   },
 ];

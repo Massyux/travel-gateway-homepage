@@ -27,13 +27,13 @@ const CAT_BADGE: Record<NewsCategory, { label: Record<Locale, string>; cls: stri
   destination: { label: { fr: "Destination", en: "Destination",  ar: "وجهة"    }, cls: "bg-teal-100 text-teal-700 border-teal-200" },
 };
 
-// Category fallback images from Unsplash (all pre-approved in next.config)
+// Category fallback images (used ONLY when the article has no image of its own)
 const CAT_IMAGES: Record<NewsCategory, string> = {
-  vols:        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80",
-  visa:        "https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&w=600&q=80",
-  gds:         "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80",
-  tarifs:      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80",
-  destination: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+  vols:        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
+  visa:        "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80",
+  gds:         "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+  tarifs:      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+  destination: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
 };
 
 // Source icons
@@ -47,11 +47,11 @@ const SOURCE_ICON: Record<string, string> = {
 
 function NewsCard({ item, locale }: { item: NewsItem; locale: Locale }) {
   const badge = CAT_BADGE[item.category];
-  // Use item image if from unsplash, else use category fallback
-  const imgSrc =
-    item.image?.includes("unsplash.com")
-      ? item.image
-      : CAT_IMAGES[item.category];
+  // Priority: 1) article's own image (RSS or static-assigned), 2) category fallback
+  const imgSrc = item.image ?? CAT_IMAGES[item.category];
+  // Unsplash images can be optimised; external RSS images from other domains
+  // need unoptimized:true to bypass next/image's domain allowlist
+  const isUnsplash = imgSrc.includes("unsplash.com");
 
   return (
     <a
@@ -60,13 +60,14 @@ function NewsCard({ item, locale }: { item: NewsItem; locale: Locale }) {
       rel="noopener noreferrer"
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/60 bg-white/55 shadow-sm backdrop-blur-md transition-all duration-200 hover:border-white/80 hover:bg-white/80 hover:-translate-y-1 hover:shadow-lg"
     >
-      {/* Image */}
+      {/* Image — uses the article's own photo when available */}
       <div className="relative h-44 overflow-hidden">
         <Image
           src={imgSrc}
           alt={item.title}
           fill
           sizes="(min-width:1024px) 30vw, (min-width:640px) 48vw, 92vw"
+          unoptimized={!isUnsplash}
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {/* Badge overlay on image */}
